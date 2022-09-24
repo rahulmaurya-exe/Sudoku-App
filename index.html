@@ -27,6 +27,7 @@
   </head>
   <body>
     <!-- top nav -->
+
     <nav>
       <div class="nav-container">
         <a href="#" class="nav-logo"> Sudoku </a>
@@ -37,19 +38,30 @@
         </div>
       </div>
     </nav>
-     <!-- end top nav -->
-      <!-- main --> 
-      
-        <div class="main">
-          <div class="screen">
-            <!-- start screen  -->
-            <div class="start-screen" id="start-screen">
-              <input type="text" placeholder="">
-            </div>
-            <!-- end start screen  -->
-          </div>
+
+    <!-- end top nav -->
+    <!-- main -->
+
+    <div class="main">
+      <div class="screen">
+        <!-- start screen  -->
+        <div class="start-screen active" id="start-screen">
+          <input
+            type="text"
+            placeholder="Your Name"
+            maxlength="11"
+            class="input-name"
+            id="input-name"
+          />
+          <div class="btn" id="btn-level">Easy</div>
+          <div class="btn" id="btn-continue">Continue</div>
+          <div class="btn btn-blue" id="btn-play">New Game</div>
         </div>
-      <!-- end main -->
+        <!-- end start screen  -->
+      </div>
+    </div>
+    <!-- end main -->
+    <script src="/static/js/constant.js"></script>
     <script src="/static/js/app.js"></script>
   </body>
 </html>
